@@ -3,26 +3,31 @@ import HeroImage from "../assets/HeroImage.png"
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 import {Link} from "react-scroll";
 
-
+// Home component
 const Home = () => {
     return (
+        // Home section with a gradient background
         <div name="home" className="h-screen w-full bg-gradient-to-b 
         from-black via-black to-gray-800"
         >
+            {/* Container for centering content */}
             <div className="max-w-screen-lg mx-auto flex flex-col
             items-center justify-center h-full px-4 md:flex-row">
+                {/* Left column with text content */}
                 <div className="flex flex-col justify-center h-full">
+                    {/* Title */}
                     <h2 className="text-4xl sm:text-7xl font-bold
                     text-white">
                         I am a full Stack Developer
                     </h2>
+                    {/* Description */}
                     <p className="text-gray-400 py-4 max-w-md">
                     I am a future Full Stack Web Developer at Atlas School 
                     (formerly Holberton School) in Tulsa, OK. 
                     Take a look of my first web using
                     technologies like React and Tailwind.
                     </p>
-
+                    {/* Portfolio link */}
                     <div>
                         <Link
                         to="portfolio"
@@ -40,6 +45,7 @@ const Home = () => {
                         </Link>
                     </div>
                 </div>
+                {/* Right column with image */}
                 <div>
                     <img 
                     src={HeroImage}
@@ -51,4 +57,5 @@ const Home = () => {
         </div>
     );
 };
+// Export the Home component
 export default Home;

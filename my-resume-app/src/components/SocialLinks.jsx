@@ -3,7 +3,9 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 
+// SocialLinks component
 const SocialLinks = () => {
+  // Array of social links with details
   const links = [
     {
       id: 1,
@@ -47,17 +49,20 @@ const SocialLinks = () => {
   ];
 
   return (
+    // Container for social links with a fixed position
     <div className="hidden lg:flex flex-col top-[35%] left-0 fixed ">
       <ul>
+        {/* Mapping through social links to display them */}
         {links.map(({ id, child, href, style, download }) => (
           <li
-            key={id}
+            key={id, child}
             className={
-              "flex bg-blue-500 justify-between items-center w-40 h-14 px-4 ml-[-100px] hover:ml-[-10px] hover:rounded-md duration-300 bg-gray-500" +
+              "flex bg-blue-500 justify-between items-center w-40 h-14 px-4 ml-[-100px] hover:ml-[-5px] hover:rounded-md duration-300" +
               " " +
               style
             }
           >
+            {/* Social link with child element (icon and text) */}
             <a
               href={href}
               className="flex justify-between items-center w-full text-white"
@@ -73,5 +78,5 @@ const SocialLinks = () => {
     </div>
   );
 };
-
+// Export the SocialLinks component
 export default SocialLinks;

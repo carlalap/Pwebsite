@@ -12,7 +12,9 @@ import linux from "../assets/linux.png";
 import Python from "../assets/Python.png";
 import Flask from "../assets/Flask.png";
 
+// Experience Component
 const Experience = () => {
+  // Array of technologies with their details
   const techs = [
     {
       id: 1,
@@ -83,24 +85,28 @@ const Experience = () => {
   ];
 
   return (
+    // Experience section with a gradient background
     <div
       name="experience"
       className="pt-20 bg-gradient-to-b from-gray-800 to-black w-full h-screen"
     >
+      {/* Container for centering content */}
       <div className="max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-full text-white">
-        <div className="pb-2">
+        <div className="pt-20 pb-2">
           <p className="text-4xl font-bold border-b-4 border-gray-500 p-2 inline">
             Experience
           </p>
           <p className="py-6">These are the technologies I have worked with</p>
         </div>
 
-        <div className="w-full grid grid-cols-2 sm:grid-cols-3 gap-6 text-center sm:py-2 px-12 sm:mx-10">
+        {/* Grid layout for displaying technologies */}
+        <div className="w-full grid grid-cols-2 sm:grid-cols-3 gap-6 text-center sm:py-2 px-6 sm:mx-4">
           {techs.map(({ id, src, title, style }) => (
             <div
               key={id}
               className={`shadow-md hover:scale-105 duration-500 py-2 rounded-lg ${style}`}
             >
+              {/* Tech image */}
               <img src={src} alt="" className="w-10 mx-auto" />
               <p className="mt-2">{title}</p>
             </div>
@@ -110,5 +116,5 @@ const Experience = () => {
     </div>
   );
 };
-
+// Export the Experience component
 export default Experience;
