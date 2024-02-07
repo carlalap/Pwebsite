@@ -7,12 +7,11 @@
 
 </p>
 
-   
-<h2>Reequirements:</h2>
+<h2>Requirements:</h2>
 
 1. Domain
 2. About Me
 3. Portfolio Section
 4. Resume Section
 5. Links Section(Github, Linkdin, Facebook, etc.)
-6. Contact Info 
+6. Contact Info
